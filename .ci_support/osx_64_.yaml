@@ -7,7 +7,7 @@ channel_targets:
 cxx_compiler:
 - clangxx
 cxx_compiler_version:
-- '13'
+- '14'
 fftw:
 - '3'
 freetype:
@@ -17,18 +17,10 @@ jpeg:
 libtiff:
 - '4'
 llvm_openmp:
-- '13'
+- '14'
 macos_machine:
 - x86_64-apple-darwin13.4.0
 pin_run_as_build:
-  fftw:
-    max_pin: x
-  freetype:
-    max_pin: x
-  jpeg:
-    max_pin: x
-  libtiff:
-    max_pin: x
   python:
     min_pin: x.x
     max_pin: x.x
@@ -36,7 +28,6 @@ pybind11_abi:
 - '4'
 python:
 - 3.10.* *_cpython
-- 3.7.* *_cpython
 - 3.8.* *_73_pypy
 - 3.8.* *_cpython
 - 3.9.* *_73_pypy
