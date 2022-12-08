@@ -1,5 +1,5 @@
 {% set name = "diplib-meta" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/DIPlib/diplib/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 01c6fc164d973fe89a9a9b04082a2915aeaedfbd207bf78ce3f83aa298b603d7
+  sha256: e8ea2bc060400a9ec0289f228fd919600e0ee856dda9cde5de7c76d17a776a59
   patches:
     - pydip.patch
     - vendored_deps.patch
 
 build:
-  number: 2
+  number: 0
   skip: true  # [win]
 
 outputs:
@@ -62,7 +62,7 @@ outputs:
       home: https://github.com/DIPlib/diplib
       license: Apache-2.0
       license_file: LICENSE.txt
-      summary: 'One-stop library and development environment for quantitative image analysis'
+      summary: One-stop library and development environment for quantitative image analysis
   - name: diplib-python
     script: install-python.sh
     build:
@@ -123,14 +123,14 @@ outputs:
       home: https://github.com/DIPlib/diplib
       license: Apache-2.0
       license_file: LICENSE.txt
-      summary: 'Python bindings to DIPlib 3, a library for quantitative image analysis'
+      summary: Python bindings to DIPlib 3, a library for quantitative image analysis
 
 about:
   home: https://github.com/DIPlib/diplib
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE.txt
-  summary: 'One-stop library and development environment for quantitative image analysis'
+  summary: One-stop library and development environment for quantitative image analysis
   description: |
     The purpose of the DIPlib project is to provide a one-stop
     library and development environment for quantitative image
