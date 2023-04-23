@@ -1,13 +1,38 @@
+About diplib-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diplib-feedstock/blob/main/LICENSE.txt)
+
 About diplib
-============
+------------
 
 Home: https://github.com/DIPlib/diplib
 
 Package license: Apache-2.0
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/diplib-feedstock/blob/main/LICENSE.txt)
+Summary: One-stop library and development environment for quantitative image analysis
+
+The purpose of the DIPlib project is to provide a one-stop
+library and development environment for quantitative image
+analysis, be it applied to microscopy, radiology,
+astronomy, or anything in between.
+
+About diplib
+------------
+
+Home: https://github.com/DIPlib/diplib
+
+Package license: Apache-2.0
 
 Summary: One-stop library and development environment for quantitative image analysis
+About diplib-python
+-------------------
+
+Home: https://github.com/DIPlib/diplib
+
+Package license: Apache-2.0
+
+Summary: Python bindings to DIPlib 3, a library for quantitative image analysis
 
 Current build status
 ====================
