@@ -46,7 +46,7 @@ outputs:
         # unvendored
         - libics
         - libtiff
-        - jpeg
+        - libjpeg-turbo  # jpeg
         - eigen
         - pybind11
         - pybind11-abi
@@ -106,7 +106,7 @@ outputs:
         # unvendored
         - libics
         - libtiff
-        - jpeg
+        - libjpeg-turbo  # jpeg
         - eigen
         - pybind11
         - pybind11-abi
