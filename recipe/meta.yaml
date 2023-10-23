@@ -13,7 +13,7 @@ source:
     - vendored_deps.patch
 
 build:
-  number: 2
+  number: 3
   skip: true  # [win]
 
 outputs:
@@ -42,10 +42,11 @@ outputs:
         - glfw
         - fftw
         - freetype
+        - zlib
         # unvendored
         - libics
         - libtiff
-        - jpeg
+        - libjpeg-turbo  # jpeg
         - eigen
         - pybind11
         - pybind11-abi
@@ -101,10 +102,11 @@ outputs:
         - glfw
         - fftw
         - freetype
+        - zlib
         # unvendored
         - libics
         - libtiff
-        - jpeg
+        - libjpeg-turbo  # jpeg
         - eigen
         - pybind11
         - pybind11-abi
