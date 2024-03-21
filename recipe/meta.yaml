@@ -1,5 +1,5 @@
 {% set name = "diplib-meta" %}
-{% set version = "3.3.0" %}
+{% set version = "3.4.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/DIPlib/diplib/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 01c6fc164d973fe89a9a9b04082a2915aeaedfbd207bf78ce3f83aa298b603d7
+  sha256: 357e0d794f51221bd47badf0c7a4d6a5afbe875cb836b9b6faf7f2c23daf1e04
   patches:
     - pydip.patch
     - vendored_deps.patch
 
 build:
-  number: 5
+  number: 0
   skip: true  # [win]
 
 outputs:
