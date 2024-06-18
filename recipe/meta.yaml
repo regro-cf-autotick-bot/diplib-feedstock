@@ -1,5 +1,5 @@
 {% set name = "diplib-meta" %}
-{% set version = "3.3.0" %}
+{% set version = "3.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,13 +7,13 @@ package:
 
 source:
   url: https://github.com/DIPlib/diplib/archive/refs/tags/{{ version }}.tar.gz
-  sha256: 01c6fc164d973fe89a9a9b04082a2915aeaedfbd207bf78ce3f83aa298b603d7
+  sha256: e63adf91baf9f300e00d74bc595bbac0fc0a41892a939d0ea8933c72eff05bec
   patches:
     - pydip.patch
     - vendored_deps.patch
 
 build:
-  number: 5
+  number: 0
   skip: true  # [win]
 
 outputs:
@@ -25,6 +25,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
         - cmake
         - make
         - llvm-openmp  # [osx]
@@ -83,6 +84,7 @@ outputs:
     requirements:
       build:
         - {{ compiler('cxx') }}
+        - {{ stdlib("c") }}
         - cmake
         - make
         - llvm-openmp  # [osx]
